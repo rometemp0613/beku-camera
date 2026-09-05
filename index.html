@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SOOP iframe test</title>
+
+<style>
+html,body{
+  margin:0;
+  background:#111;
+  color:#fff;
+  font-family:sans-serif;
+}
+
+main{
+  padding:24px;
+  text-align:center;
+}
+
+button{
+  padding:12px 20px;
+  font-size:16px;
+}
+
+#result{
+  margin-top:18px;
+  color:#ff9fd1;
+  font-size:20px;
+}
+</style>
+</head>
+
+<body>
+<main>
+  <h2>SOOP iframe TEST</h2>
+  <p>이 화면이 보이면 외부 HTML 로드는 성공입니다.</p>
+
+  <button id="testButton">JS 테스트</button>
+
+  <div id="result">아직 누르지 않음</div>
+</main>
+
+<script>
+document.getElementById("testButton").addEventListener("click", () => {
+  document.getElementById("result").textContent = "JS도 정상 작동합니다!";
+});
+</script>
+</body>
+</html>
