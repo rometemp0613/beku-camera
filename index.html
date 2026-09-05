@@ -3,48 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SOOP iframe test</title>
+<title>SOOP Cloudflare Test</title>
 
 <style>
-html,body{
-  margin:0;
-  background:#111;
-  color:#fff;
-  font-family:sans-serif;
+html, body {
+  margin: 0;
+  background: #111;
+  color: white;
+  font-family: sans-serif;
 }
 
-main{
-  padding:24px;
-  text-align:center;
+body {
+  text-align: center;
+  padding: 40px 10px;
 }
 
-button{
-  padding:12px 20px;
-  font-size:16px;
+button {
+  padding: 12px 20px;
+  font-size: 18px;
 }
 
-#result{
-  margin-top:18px;
-  color:#ff9fd1;
-  font-size:20px;
+#result {
+  margin-top: 20px;
+  color: #ff9fd1;
+  font-size: 22px;
 }
 </style>
 </head>
 
 <body>
-<main>
-  <h2>SOOP iframe TEST</h2>
-  <p>이 화면이 보이면 외부 HTML 로드는 성공입니다.</p>
 
-  <button id="testButton">JS 테스트</button>
+<h1>SOOP TEST</h1>
+<p>Cloudflare Pages iframe 테스트입니다.</p>
 
-  <div id="result">아직 누르지 않음</div>
-</main>
+<button id="testButton">눌러보기</button>
+
+<div id="result">대기 중</div>
 
 <script>
 document.getElementById("testButton").addEventListener("click", () => {
-  document.getElementById("result").textContent = "JS도 정상 작동합니다!";
+  document.getElementById("result").textContent = "JS 작동함!";
 });
 </script>
+
 </body>
 </html>
